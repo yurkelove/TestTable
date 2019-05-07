@@ -1,27 +1,133 @@
-.App {
+body {
+	margin: 0 auto;
+	padding: 0;
+	max-width: 960px;
+}
+
+.content {
+	margin: 0 auto;
+    text-align: center;
+}
+
+
+table {
+	width: 100%;
+	background-color: #ffffff;
+	border: none;
+	border-collapse: collapse;
+	font-family: 'Roboto', sans-serif;
+}
+
+table thead th {
+	font-size: 1.25rem;
+	padding: .5em 0 .5em 1em;
+	background-color: #5bc9aa;
+	border: none;
+	border-right: 1px solid #f1f1f1;
+	border-bottom: 3px solid #bdbdbd;
+	color: #ffffff;
+	font-weight: 400;
+	text-align: left;
+}
+
+table thead th:last-of-type {
+	border-right: none;
+}
+
+table tbody tr:nth-of-type(even) {
+	background-color: #f1f1f1;
+}
+
+table tbody td {
+	padding: 1em;
+	border-top: none;
+	border-bottom: 1px solid #C1C3D1;
+	border-left: none;
+	margin: 0 auto;
+    text-align: center;
+}
+
+.edit,
+.trash,
+.new-row {
+	text-transform: uppercase;
+	transition: .5s ease;
+	font-size:20px;
+}
+
+.edit:hover,
+.trash:hover,
+.new-row:hover {
+	cursor: pointer;
+	background-color: #52b3d9;
+	color:white;
+}
+
+.add-row {
+	text-align: center;
+
+}
+
+.edit{
+	color: black;
+	font-size: 20px;
+}
+.trash {
+	color: black;
+	font-size: 20px;
+}
+
+input[type="text"] {
+	padding-left: 0.5rem;
+	margin-left: -0.5rem;
+	width: 100%;
+	line-height: 1.8rem;
+	font-size: 1rem;
+	font-family: inherit;
+	border-radius: 3px;
+	border: 1px solid #bdbdbd;
+	box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.75);
+}
+
+
+#tableSave,#tableRender{
+	padding: 10px;
+	background: #5bc9aa;
+	outline: none;
+	border: none;
+	border-radius: 3px;
+	color: white;
+	font-size: 15px;
+	cursor: pointer;
+	margin-top:20px;
+	display: block;
   text-align: center;
+  margin: 0 auto;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+#tableRender:hover{
+	background-color: #52b3d9;
+	color:white;
+	transition: .5s ease;
+}
+#tableSave:hover{
+	background-color: #52b3d9;
+	color:white;
+	transition: .5s ease;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#tableData{
+	margin-bottom: 30px;
+}
+#tableDataSave{
+	margin-bottom: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.table-container-textarea{
+	display: flex;
+	justify-content: center;
 }
+
 
 @keyframes App-logo-spin {
   from {
